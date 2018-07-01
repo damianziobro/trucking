@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
 
 import Header from '../components/Header';
-import './index.css';
 
 const Layout = ({
   children,
@@ -22,6 +21,7 @@ const Layout = ({
 
 Layout.propTypes = {
   children: PropTypes.func,
+  data: PropTypes.object,
 };
 
 export default Layout;
