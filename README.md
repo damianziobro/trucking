@@ -16,8 +16,6 @@ Install dependencies:
 npm install
 ```
 
-Before running you need set accessToken to Contentful in gatsby-config.js. I don't publish it to public repo because of security reasons.
-
 Run in development mode:
 
 ```sh
