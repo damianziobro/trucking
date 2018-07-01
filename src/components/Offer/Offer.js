@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 const Offer = ({
   offerData: {
@@ -18,6 +19,10 @@ const Offer = ({
       <p>{text}</p>
     </li>
   );
+};
+
+Offer.propTypes = {
+  offerData: PropTypes.object.isRequired,
 };
 
 export default Offer;
