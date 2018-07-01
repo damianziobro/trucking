@@ -19,6 +19,7 @@ const BlogPosts = styled.ul`
 `;
 
 const HeroSectionHeading = styled.h2`
+  margin: 187px 0;
   font-weight: 800;
   font-size: 7.2em;
   text-transform: uppercase;
