@@ -1,13 +1,17 @@
 import React from 'react';
+import styled from 'styled-components';
 
-import Logo from '../components/Logo/Logo';
-import Menu from '../components/Menu/Menu';
+import Logo from '../components/Logo';
+import Menu from '../components/Menu';
+
+const SearchButton = styled.button``;
 
 const Header = () => (
   <header>
     <Logo />
     <Menu />
-    <button>Search</button>
+
+    <SearchButton>Search</SearchButton>
   </header>
 );
 
