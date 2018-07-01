@@ -1,29 +1,52 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import styled from 'styled-components';
 
+const MenuList = styled.ul`
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style-type: none;
+`;
+
+const MenuLink = styled(Link)`
+  padding: 27px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 1.3em;
+  color: #333333;
+  font-weight: 700;
+  border-bottom: 8px solid transparent;
+  transition: 0.2s;
+
+  &:hover {
+    border-bottom-color: #006db7;
+  }
+`;
 const Menu = () => {
   return (
     <nav>
-      <ul>
+      <MenuList>
         <li>
-          <Link to="/">Home</Link>
+          <MenuLink to="/">Home</MenuLink>
         </li>
         <li>
-          <Link to="/">About us</Link>
+          <MenuLink to="/">About us</MenuLink>
         </li>
         <li>
-          <Link to="/">Services</Link>
+          <MenuLink to="/">Services</MenuLink>
         </li>
         <li>
-          <Link to="/">News</Link>
+          <MenuLink to="/">News</MenuLink>
         </li>
         <li>
-          <Link to="/">Locations</Link>
+          <MenuLink to="/">Locations</MenuLink>
         </li>
         <li>
-          <Link to="/">Contact</Link>
+          <MenuLink to="/">Contact</MenuLink>
         </li>
-      </ul>
+      </MenuList>
     </nav>
   );
 };
