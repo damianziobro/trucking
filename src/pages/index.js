@@ -1,7 +1,7 @@
 import React from 'react';
 
-import BlogPost from '../components/BlogPost/BlogPost';
-import Offer from '../components/Offer/Offer';
+import BlogPost from '../components/BlogPost';
+import Offer from '../components/Offer';
 
 const IndexPage = ({
   data: {
