@@ -41,6 +41,7 @@ injectGlobal`
     padding: 0;
     margin: 0;
     font-family: 'Raleway', sans-serif;
+    font-size: 10px;
   }
 `;
 
