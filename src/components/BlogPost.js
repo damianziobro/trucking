@@ -5,10 +5,14 @@ import styled from 'styled-components';
 
 const BlogPostStyled = styled.li`
   margin: 10px;
-  height: 100%;
   width: 30%;
   display: flex;
   flex-direction: column;
+
+  @media (max-width: 920px) {
+    margin: 10px auto;
+    width: calc(90%);
+  }
 `;
 
 const TopWrapper = styled.div`
@@ -20,9 +24,13 @@ const TopWrapper = styled.div`
 `;
 
 const BottomWrapper = styled.div`
-  height: 187px;
+  height: 150px;
   padding: 30px;
   background-color: #ffffff;
+
+  @media (max-width: 920px) {
+    height: auto;
+  }
 `;
 
 const ReadMoreLink = styled(Link)`

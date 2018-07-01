@@ -5,6 +5,7 @@ import styled from 'styled-components';
 const MenuList = styled.ul`
   padding: 0;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
@@ -20,8 +21,10 @@ const MenuLink = styled(Link)`
   border-bottom: 8px solid transparent;
   transition: 0.2s;
 
-  &:hover {
-    border-bottom-color: #006db7;
+  @media (any-hover: hover) {
+    &:hover {
+      border-bottom-color: #006db7;
+    }
   }
 `;
 const Menu = () => {

@@ -11,6 +11,11 @@ const OfferItem = styled.li`
   height: 185px;
   width: calc(50% - 60px);
   background-color: #fcfcfc;
+
+  @media (max-width: 920px) {
+    width: 100%;
+    height: auto;
+  }
 `;
 
 const OfferIcon = styled.img`

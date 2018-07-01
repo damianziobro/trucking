@@ -10,6 +10,11 @@ const LogoLink = styled(Link)`
   justify-content: center;
   align-items: center;
   text-decoration: none;
+
+  @media (max-width: 920px) {
+    width: 90%;
+    order: -2;
+  }
 `;
 
 const LogoIcon = styled.img`

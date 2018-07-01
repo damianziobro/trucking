@@ -34,6 +34,17 @@ const HeroSectionHeading = styled.h2`
     height: 7px;
     background-color: #fdc300;
   }
+
+  @media (max-width: 920px) {
+    width: 100%;
+    font-size: 4em;
+    margin: 50px 0;
+    text-align: center;
+
+    &:before {
+      margin: 0 auto;
+    }
+  }
 `;
 
 const ViewDetailsBtn = styled.button`
