@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'gatsby-link';
+import PropTypes from 'prop-types';
 
 const BlogPost = ({
   blogPostData: {
@@ -23,6 +24,10 @@ const BlogPost = ({
       </div>
     </li>
   );
+};
+
+BlogPost.propTypes = {
+  blogPostData: PropTypes.object.isRequired,
 };
 
 export default BlogPost;
