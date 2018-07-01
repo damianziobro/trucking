@@ -1,26 +1,25 @@
-# gatsby-starter-default
-The default Gatsby starter.
+# Trucking
 
-For an overview of the project structure please refer to the [Gatsby documentation - Building with Components](https://www.gatsbyjs.org/docs/building-with-components/).
+Simple site created in Gatsby.js, React, Contentful and Styled Components.
 
-## Install
+## Development
 
 Make sure that you have the Gatsby CLI program installed:
+
 ```sh
 npm install --global gatsby-cli
 ```
 
-And run from your CLI:
+Install dependencies:
+
 ```sh
-gatsby new gatsby-example-site
+npm install
 ```
 
-Then you can run it by:
+Before running you need set accessToken to Contentful in gatsby-config.js. I don't publish it to public repo because of security reasons.
+
+Run in development mode:
+
 ```sh
-cd gatsby-example-site
 gatsby develop
 ```
-
-## Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
