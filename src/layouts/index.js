@@ -20,7 +20,7 @@ const Layout = ({
         {
           rel: 'stylesheet',
           href:
-            'https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,800',
+            'https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,600,700,800',
         },
       ]}
     />
