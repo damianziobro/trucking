@@ -1,11 +1,13 @@
 import React from 'react';
-import Link from 'gatsby-link';
 
-const Header = ({ siteTitle }) => (
+import Logo from '../components/Logo/Logo';
+import Menu from '../components/Menu/Menu';
+
+const Header = () => (
   <header>
-    <h1>
-      <Link to="/">{siteTitle}</Link>
-    </h1>
+    <Logo />
+    <Menu />
+    <button>Search</button>
   </header>
 );
 
