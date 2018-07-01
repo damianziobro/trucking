@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import Helmet from 'react-helmet';
+import { injectGlobal } from 'styled-components';
 
 import Header from '../components/Header';
 
@@ -34,6 +35,14 @@ Layout.propTypes = {
 };
 
 export default Layout;
+
+injectGlobal`
+  body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Raleway', sans-serif;
+  }
+`;
 
 export const query = graphql`
   query SiteTitleQuery {
