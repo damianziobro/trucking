@@ -13,7 +13,16 @@ const Layout = ({
   },
 }) => (
   <div>
-    <Helmet title={title} />
+    <Helmet
+      title={title}
+      link={[
+        {
+          rel: 'stylesheet',
+          href:
+            'https://fonts.googleapis.com/css?family=Open+Sans|Raleway:400,700,800',
+        },
+      ]}
+    />
     <Header />
     <div>{children()}</div>
   </div>
