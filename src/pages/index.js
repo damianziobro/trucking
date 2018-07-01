@@ -7,23 +7,6 @@ import Wrapper from '../components/Wrapper';
 
 const HeroSection = styled.section`
   background-color: #122636;
-
-  h2 {
-    font-weight: 800;
-    font-size: 7.2em;
-    text-transform: uppercase;
-    color: #ffffff;
-    width: 50%;
-    align-self: flex-start;
-  }
-
-  h2::before {
-    content: '';
-    display: block;
-    width: 70px;
-    height: 7px;
-    background-color: #fdc300;
-  }
 `;
 
 const BlogPosts = styled.ul`
@@ -33,6 +16,23 @@ const BlogPosts = styled.ul`
   justify-content: space-between;
   align-items: center;
   list-style-type: none;
+`;
+
+const HeroSectionHeading = styled.h2`
+  font-weight: 800;
+  font-size: 7.2em;
+  text-transform: uppercase;
+  color: #ffffff;
+  width: 50%;
+  align-self: flex-start;
+
+  &::before {
+    content: '';
+    display: block;
+    width: 70px;
+    height: 7px;
+    background-color: #fdc300;
+  }
 `;
 
 const ViewDetailsBtn = styled.button`
@@ -55,6 +55,43 @@ const ViewDetailsBtn = styled.button`
   }
 `;
 
+const OffersSection = styled.section`
+  background-color: #ffffff;
+`;
+
+const OffersSectionTitle = styled.h2`
+  margin-bottom: 0;
+  color: #333333;
+  font-weight: 700;
+  font-size: 3em;
+`;
+
+const OffersSectionSubtitle = styled.p`
+  margin: 5px;
+  color: #888888;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 1.3em;
+
+  &::after {
+    margin: 10px auto;
+    content: '';
+    display: block;
+    width: 33px;
+    height: 6px;
+    background-color: #fdc300;
+  }
+`;
+
+const OffersList = styled.ul`
+  padding: 0;
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+`;
+
 const IndexPage = ({
   data: {
     blog: { edges: blogPostsData },
@@ -65,7 +102,9 @@ const IndexPage = ({
     <div>
       <HeroSection>
         <Wrapper>
-          <h2>Strongest distribution network</h2>
+          <HeroSectionHeading>
+            Strongest distribution network
+          </HeroSectionHeading>
           <BlogPosts>
             {blogPostsData.map(blogPostData => (
               <BlogPost
@@ -78,17 +117,19 @@ const IndexPage = ({
         </Wrapper>
       </HeroSection>
 
-      <section>
+      <OffersSection>
         <Wrapper>
-          <h2>What we offer</h2>
-          <p>Tailored logistic services</p>
-          <ul>
+          <OffersSectionTitle>What we offer</OffersSectionTitle>
+          <OffersSectionSubtitle>
+            Tailored logistic services
+          </OffersSectionSubtitle>
+          <OffersList>
             {offersData.map(offerData => (
               <Offer key={offerData.node.id} offerData={offerData} />
             ))}
-          </ul>
+          </OffersList>
         </Wrapper>
-      </section>
+      </OffersSection>
     </div>
   );
 };
