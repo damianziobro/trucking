@@ -2,6 +2,10 @@
 
 Simple site created in Gatsby.js, React, Contentful and Styled Components.
 
+## Live
+
+https://sad-wing-ec32f8.netlify.com/
+
 ## Development
 
 Make sure that you have the Gatsby CLI program installed:
