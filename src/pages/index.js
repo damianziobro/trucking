@@ -115,7 +115,7 @@ const IndexPage = ({
       <HeroSection>
         <Wrapper>
           <HeroSectionHeading>
-            Strongest distribution network
+            JamStack Wroclaw
           </HeroSectionHeading>
           <BlogPosts>
             {blogPostsData.map(blogPostData => (
